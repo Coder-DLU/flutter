@@ -1,0 +1,25 @@
+import 'dart:ui';
+
+import 'package:flutter/material.dart';
+String s1='how are you?';
+String s2 = 'I\'m fine';
+var s3 = '$s1 - $s2';
+int x= 10;
+List<int> number=[1,2,3,4,5,6,7,8];
+void main(){
+  for(int i = 0; i < number.length; i++){
+    print(number);
+  }
+  number.forEach((number) {
+    print(number);
+  });
+  runApp(
+      Center(child: Text(
+          '$number',
+          style: TextStyle(fontSize: 20),
+          textDirection: TextDirection.ltr
+      ))
+      );
+}
+
+
